@@ -1,0 +1,634 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsft- Cloud, Computers, Apps, Gaming</title>
+    <link rel="shortcut icon" href="Images/fav-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="font-[: Segoe UI, SegoeUI, Helvetica Neue, Helvetica, Arial, sans-serif]"
+  >
+    <!-- Header -->
+    <header class="md:mx-16">
+      <nav class="navbar flex justify-between p-4 px-4 md:py-4">
+        <div class="flex mt-1 justify-center md:order-2">
+          <!-- hamburger -->
+          <button
+            class="hamburger cursor-pointer md:hidden"
+            id="hamburgerbtn"
+            onclick="hamburgerbtn();"
+          >
+            <div class="line1 bg-black h-[1px] w-5 my-1 md:hidden"></div>
+            <div class="line2 bg-black h-[1px] w-5 my-1 md:hidden"></div>
+            <div class="line3 bg-black h-[1px] w-5 my-1 md:hidden"></div>
+          </button>
+
+          <span
+            class="text-[2.25rem] md:hidden rotate-45 cursor-pointer hidden mt-[-19px]"
+            onclick="closebtn();"
+            id="closebtn"
+            >+</span
+          >
+          <div class="search ml-2 md:hidden">
+            <img
+              src="Images/searching.png"
+              alt="search"
+              class="w-5 cursor-pointer"
+            />
+          </div>
+        </div>
+        <!-- logo -->
+        <div class="md:flex logo cursor-pointer md:order-1">
+          <div class="img">
+            <img src="Images/logo.png" alt="logo" class="w-28" />
+          </div>
+          <!-- Items-microsoft -->
+          <div
+            class="h-[62vh] md:h-0 items mt-12 md:ml-3 md:mt-0 text-sm bg-[#F2F2F2] absolute inset-0 top-4 -translate-x-full md:w-auto md:bg-white md:translate-x-0 md:static w-fit"
+            id="items"
+          >
+            <ul
+              class="flex flex-col md:flex-row md:space-x-4 md:p-[2px] space-y-5 md:space-y-0"
+            >
+              <li class="md:hover:underline hover:underline-offset-4">
+                <a href="#">Microsoft 365</a>
+              </li>
+              <li class="md:hover:underline hover:underline-offset-4">
+                <a href="#">Office</a>
+              </li>
+              <li class="md:hover:underline hover:underline-offset-4">
+                <a href="#">Windows</a>
+              </li>
+              <li class="md:hover:underline hover:underline-offset-4">
+                <a href="#">Surface</a>
+              </li>
+              <li class="md:hover:underline hover:underline-offset-4">
+                <a href="#">Xbox</a>
+              </li>
+              <li class="md:hover:underline hover:underline-offset-4">
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Accounts-info -->
+        <div class="Accounts flex md:order-3 space-x-4">
+          <div class="search ml-2 hidden md:block">
+            <img
+              src="Images/searching.png"
+              alt="search"
+              class="w-5 cursor-pointer mt-[1.5px]"
+            />
+          </div>
+          <div class="cart">
+            <img
+              src="Images/shopping-cart.png"
+              alt="cart"
+              class="w-4 mt-1 cursor-pointer"
+            />
+          </div>
+          <div class="account ml-2">
+            <img
+              src="Images/user.png"
+              alt="account"
+              class="w-5 mt-0.5 cursor-pointer"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main id="main">
+      <!-- Slider -->
+      <section
+        class="slider-container bg-[#f2f2f2] flex flex-col-reverse md:flex-row cursor-pointer md:h-96 md:mx-16"
+      >
+        <div
+          class="left-side flex flex-col justify-center items-center py-7 px-5 text-center md:text-left md:items-baseline md:w-[50%] md:ml-6"
+        >
+          <span class="bg-[#ffb900] py-1 px-2">New</span>
+          <h1 class="text-xl font-bold my-1">Surface 8 Pro</h1>
+          <p class="my-1">
+            Do more with a larger 13-inch touchscreen, faster connections and
+            extra speed. Now available with Windows 11.
+          </p>
+          <button class="bg-black py-2 px-5 text-white my-1">Learn More</button>
+        </div>
+        <div class="right-side m-auto">
+          <img
+            src="Images/laptop-img.webp"
+            alt="background laptop"
+            class="max-w-full"
+          />
+        </div>
+      </section>
+      <!-- Second-Section -->
+      <section class="md:flex my-12 md:justify-center">
+        <div
+          class="Images my-7 mx-7 flex md:flex-col items-center cursor-pointer md:w-40"
+        >
+          <div class="img">
+            <img src="Images/sixth-img.png" alt="" class="w-5 md:w-10" />
+          </div>
+          <div class="sec-text mx-3 md:text-center hover:underline">
+            Choose your Microsft 365
+          </div>
+        </div>
+        <div
+          class="Images my-7 mx-7 flex md:flex-col items-center cursor-pointer md:w-40"
+        >
+          <div class="img">
+            <img src="Images/fourth-img.webp" alt="" class="w-5 md:w-10" />
+          </div>
+          <div class="sec-text mx-3 md:text-center hover:underline">
+            Explore Surface devices
+          </div>
+        </div>
+        <div
+          class="Images my-7 mx-7 flex md:flex-col items-center cursor-pointer md:w-40"
+        >
+          <div class="img">
+            <img src="Images/fifth-img.webp" alt="" class="w-5 md:w-10" />
+          </div>
+          <div class="sec-text mx-3 md:text-center hover:underline">
+            Buy Xbox Games
+          </div>
+        </div>
+        <div
+          class="Images my-7 mx-7 flex md:flex-col items-center cursor-pointer md:w-40"
+        >
+          <div class="img">
+            <img src="Images/sixth-img.png" alt="" class="w-5 md:w-10" />
+          </div>
+          <div class="sec-text mx-3 md:text-center hover:underline">
+            Get Windows 11
+          </div>
+        </div>
+      </section>
+
+      <!-- Third-section -->
+      <section class="mx-5 md:mx-16 sm:grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- First-block -->
+        <div class="blocks my-14 sm:my-3">
+          <a href="#">
+            <img src="Images/img-third.jpg" alt="" class="w-full" />
+            <h3 class="text-lg my-1 mt-2 font-bold">PC Games Pass</h3>
+            <div class="third-sec-para">
+              <p>
+                Unlock 100+ great games and member discounts, plus get your
+                first month for ₹50. Offer available to new subscribers only.
+              </p>
+            </div>
+            <a href="#" class="text-[#0067b8] hover:underline font-semibold"
+              >Join Now</a
+            >
+          </a>
+        </div>
+        <!-- Second-block -->
+        <div class="blocks my-14 sm:my-3">
+          <a href="#">
+            <img src="Images/laptog-img3.webp" alt="" class="w-full" />
+            <h3 class="text-lg my-1 mt-2 font-bold">Surface Laptop 4</h3>
+            <div class="third-sec-para">
+              <p>
+                Do it all with a perfect balance of sleek, ultra-thin design,
+                multitasking speed and improved performance.
+              </p>
+            </div>
+            <a href="#" class="text-[#0067b8] hover:underline font-semibold"
+              >Shop Now</a
+            >
+          </a>
+        </div>
+        <!-- Third-block -->
+        <div class="blocks my-14 sm:my-3">
+          <a href="#">
+            <img src="Images/laptop-img2.webp" alt="" class="w-full" />
+            <h3 class="text-lg my-1 mt-2 font-bold">Surface Laptop Go</h3>
+            <div class="third-sec-para">
+              <p>
+                Make the most of every day with the sleek style and performance
+                of our lightest Surface laptop.
+              </p>
+            </div>
+            <a href="#" class="text-[#0067b8] hover:underline font-semibold"
+              >Join Now</a
+            >
+          </a>
+        </div>
+        <!-- Fourth-block -->
+        <div class="blocks my-14 sm:my-3">
+          <a href="#">
+            <img src="Images/laptog-img3.webp" alt="" class="w-full" />
+            <h3 class="text-lg my-1 mt-2 font-bold">
+              Designed for life today – and tomorrow
+            </h3>
+            <div class="third-sec-para">
+              <p>
+                The next-generation of games. Your goals. Friends and family.
+                Windows 11 was made to bring you closer to everything you love.
+              </p>
+            </div>
+            <a href="#" class="text-[#0067b8] hover:underline font-semibold"
+              >See if your PC is ready</a
+            >
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col sm:flex-col-reverse sm:bg-[#4578c5] md:mx-16 cursor-pointer mb-2 mt-10"
+      >
+        <div class="img-s">
+          <img
+            src="Images/bg-img.jpg"
+            alt=""
+            class="w-full bg-cover h-80 sm:h-52"
+          />
+        </div>
+        <div class="text bg-[#e6e6e6] sm:bg-transparent text-center sm:pt-12">
+          <div class="w-1/2 m-auto my-16 sm:my-0">
+            <h3 class="text-lg font-bold">Microsoft Edge</h3>
+            <p class="text-[15px]">
+              World-class performance with more privacy, more productivity and
+              more value while you browse
+            </p>
+            <button
+              id="download-btn"
+              class="px-5 py-1 bg-black text-white mt-3"
+            >
+              Download Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Fourth-section -->
+      <section class="mx-5 md:mx-16 mt-5">
+        <h3 class="text-xl font-semibold mb-4">For Bussiness</h3>
+        <div
+          class="fifth-sec-container sm:grid grid-cols-2 lg:grid-cols-4 gap-6"
+        >
+          <div class="wrapper my-10 sm:my-2 cursor-pointer">
+            <div class="fifth-sec-img">
+              <img src="Images/img-i.webp" alt="" class="w-full" />
+            </div>
+            <div class="fifth-sec-info my-2">
+              <span class="bg-[#ffd800] py-1 px-2 my-2">New</span>
+              <h4 class="my-1 font-semibold text-xl">
+                Surface Pro 8 for Bussiness
+              </h4>
+              <p>
+                Get unprecedented levels of performance and versatility on a
+                13-inch screen. Discover the newest Surface for Business devices
+                now available. Available with Windows 11.
+              </p>
+              <a href="#" class="text-[#0067b8] hover:underline my-0.5"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <!-- Second -->
+          <div class="wrapper my-10 sm:my-2 cursor-pointer">
+            <div class="fifth-sec-img">
+              <img src="Images/img-j.webp" alt="" class="w-full" />
+            </div>
+            <div class="fifth-sec-info my-2">
+              <h4 class="my-1 font-semibold text-xl">
+                Get Microsoft Teams for free
+              </h4>
+              <p>
+                Online meetings, chat and shared cloud storage – all in one
+                place.
+              </p>
+              <a href="#" class="text-[#0067b8] hover:underline my-0.5"
+                >Sign Up for free</a
+              >
+            </div>
+          </div>
+          <!-- third -->
+          <div class="wrapper my-10 sm:my-2 cursor-pointer">
+            <div class="fifth-sec-img">
+              <img src="Images/img-k.webp" alt="" class="w-full" />
+            </div>
+            <div class="fifth-sec-info my-2">
+              <h4 class="my-1 font-semibold text-xl">
+                Microsoft 365 for business
+              </h4>
+              <p>
+                Stay a step ahead with powerful apps for productivity,
+                connection and security.
+              </p>
+              <a href="#" class="text-[#0067b8] hover:underline my-0.5"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+          <!-- Fourth -->
+          <div class="wrapper my-10 sm:my-2 cursor-pointer">
+            <div class="fifth-sec-img">
+              <img src="Images/img-l.webp" alt="" class="w-full" />
+            </div>
+            <div class="fifth-sec-info my-2">
+              <h4 class="my-1 font-semibold text-xl">
+                Windows 11 for business is here
+              </h4>
+              <p>
+                Designed for hybrid work. Powerful for employees. Consistent for
+                IT. Secure for all.
+              </p>
+              <a href="#" class="text-[#0067b8] hover:underline my-0.5"
+                >Get it today
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foloow lInks -->
+        <div class="follow-links flex space-x-3 items-center my-6">
+          <span class="text-[rgba(0,0,0,.6)]">Follow Microsft</span>
+          <div class="img cursor-pointer">
+            <img src="Images/facebook.png" alt="facebook" />
+          </div>
+          <div class="img cursor-pointer">
+            <img src="Images/twitter.png" alt="twitter" />
+          </div>
+          <div class="img cursor-pointer">
+            <img src="Images/youtube.png" alt="youtube" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-11 bg-[#f2f2f2] text-[#616161]">
+      <div
+        class="footer-container grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mx-6"
+      >
+        <div class="ftr my-4 mx-2 text-[12px]">
+          <ul>
+            <span class="text-lg">What's New</span>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsoft 365</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Surface Pro X</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Surface Pro 7</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Surface Laptops</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Windows 11 apps</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="ftr my-4 mx-2 text-[12px]">
+          <ul>
+            <span class="text-lg">Microsoft Store</span>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Account Profile</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Download Center</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsoft Store Support</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black">Returns</a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Order Tracking</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="ftr my-4 mx-2 text-[12px]">
+          <ul>
+            <span class="text-lg">Eductaion</span>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsoft in education</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Devices for education</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsoft teams for Education</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsoft 365 Education</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Office Education</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Educator training and development</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Deals for students and parents</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Azure for students</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="ftr my-4 mx-2 text-[12px]">
+          <ul>
+            <span class="text-lg">Bussiness</span>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsft Cloud</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsft Security</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black">Azure</a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Dynamics 365</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsft Adversting</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsft Industry</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsft Teams</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="ftr my-4 mx-2 text-[12px]">
+          <ul>
+            <span class="text-lg">Developer & IT</span>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Developer Center</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Documentation</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsft Learn</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsft Tech Community</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Azure Marketplace</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black">AppSource</a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Microsoft Power Platform</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Visual Studio</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="ftr my-4 mx-2 text-[12px]">
+          <ul>
+            <span class="text-lg">Company</span>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black">Career</a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >About Microsft</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Company News</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Privacy At Microsoft</a
+              >
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black">Investors</a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black">Security</a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="hover:underline hover:text-black"
+                >Sustainability</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-ftr mx-8 py-3">
+        <ul class="sm:text-right sm:flex sm:justify-end sm:space-x-5">
+          <li>
+            <a href="#" class="hover:text-black hover:underline text-[12px]"
+              >Contact Microsft</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-black hover:underline text-[12px]"
+              >Privacy</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-black hover:underline text-[12px]"
+              >Tearms Of use</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-black hover:underline text-[12px]"
+              >Trademarks</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-black hover:underline text-[12px]"
+              >About Our Ads</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-black hover:underline text-[12px]"
+              >&#169; Microsft 2022</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>
